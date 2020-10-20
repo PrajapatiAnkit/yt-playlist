@@ -1,0 +1,10 @@
+
+function ytPlayVideo()
+{
+
+}
+
+function ytCloseVideo()
+{
+    
+}
