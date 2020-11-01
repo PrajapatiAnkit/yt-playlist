@@ -12,4 +12,22 @@
  * Domain Path:       /languages
  */
 
- 
+/**
+ * If this file is called directly, abort.
+ */
+if (! defined('WPINC')) {
+   die;
+}
+define( 'YT_PLAYLIST_PLUGIN_VERSION', '1.0.0' );
+
+require plugin_dir_path(__FILE__).'includes/YtPlaylist.php';
+
+
+function run_yt_playlist()
+{
+    $ytPlayList = new YtPlaylist();
+    $ytPlayList->run();
+}
+
+run_yt_playlist();
+
